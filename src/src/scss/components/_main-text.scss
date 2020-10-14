@@ -1,0 +1,37 @@
+.main-text {
+  &_subheader {
+    font-size: 12.6px;
+    line-height: 23px;
+    letter-spacing: 6px;
+    color: $primary-color;
+  }
+  &_header {
+    line-height: 67px;
+    color: $headers-color;
+  }
+  &_descr {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 29px;
+    color: $headers-color;
+  }
+  &_info {
+    font-size: 18px;
+    line-height: 29px;
+    color: $maintext-color;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .main-text {
+    &_subheader {
+      font-size: 10.6px;
+    }
+    &_descr {
+      font-size: 16px;
+    }
+    &_info {
+      font-size: 16px;
+    }
+  }
+}

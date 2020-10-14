@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "M PLUS 1p";
+    src: local("Mplus 1p Light"), local("Mplus1p-Light"), url("/fonts/mplus1p/Mplus1plight.woff2") format("woff2"),
+        url("/fonts/mplus1p/Mplus1plight.woff") format("woff"),
+        url("/fonts/mplus1p/Mplus1plight.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "M PLUS 1p";
+    src: local("Mplus 1p"), local("Mplus1p-Regular"), url("/fonts/mplus1p/Mplus1p.woff2") format("woff2"),
+        url("/fonts/mplus1p/Mplus1p.woff") format("woff"), url("/fonts/mplus1p/Mplus1p.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "M PLUS 1p";
+    src: local("Mplus 1p Thin"), local("Mplus1p-Thin"), url("/fonts/mplus1p/Mplus1pthin.woff2") format("woff2"),
+        url("/fonts/mplus1p/Mplus1pthin.woff") format("woff"), url("/fonts/mplus1p/Mplus1pthin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "M PLUS 1p";
+    src: local("Mplus 1p ExtraBold"), local("Mplus1p-ExtraBold"),
+        url("/fonts/mplus1p/Mplus1pextrabold.woff2") format("woff2"),
+        url("/fonts/mplus1p/Mplus1pextrabold.woff") format("woff"),
+        url("/fonts/mplus1p/Mplus1pextrabold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "M PLUS 1p";
+    src: local("Mplus 1p Black"), local("Mplus1p-Black"), url("/fonts/mplus1p/Mplus1pblack.woff2") format("woff2"),
+        url("/fonts/mplus1p/Mplus1pblack.woff") format("woff"),
+        url("/fonts/mplus1p/Mplus1pblack.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "M PLUS 1p";
+    src: local("Mplus 1p Medium"), local("Mplus1p-Medium"), url("/fonts/mplus1p/Mplus1pmedium.woff2") format("woff2"),
+        url("/fonts/mplus1p/Mplus1pmedium.woff") format("woff"),
+        url("/fonts/mplus1p/Mplus1pmedium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "M PLUS 1p";
+    src: local("Mplus 1p Bold"), local("Mplus1p-Bold"), url("/fonts/mplus1p/Mplus1pbold.woff2") format("woff2"),
+        url("/fonts/mplus1p/Mplus1pbold.woff") format("woff"), url("/fonts/mplus1p/Mplus1pbold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}

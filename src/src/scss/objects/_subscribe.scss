@@ -1,0 +1,128 @@
+.subscribe {
+  margin-top: 130px;
+  margin-bottom: 90px;
+  &-header {
+    &_submain {
+      margin-top: 30px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+  &-form {
+    max-width: 558px;
+    margin: 51px auto;
+    &_input {
+      border: none;
+      background: none;
+      outline: none;
+      padding: 12px 20px;
+      border-bottom: 3px solid $grey-color;
+      width: 60%;
+      font-weight: 800;
+      font-size: 12.6px;
+      line-height: 26px;
+      transition: 0.3s all;
+      &::placeholder {
+        transition: 0.3s all;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: 4px;
+        color: $grey-color;
+      }
+      &:focus {
+        border-bottom: 3px solid $pink-color;
+        &::placeholder {
+          color: $pink-color;
+        }
+      }
+    }
+    &_btn {
+      transition: 0.3s all;
+      border: none;
+      background: none;
+      outline: none;
+      border-bottom: 3px solid $grey-color;
+      width: 40%;
+      font-weight: 800;
+      font-size: 12.6px;
+      letter-spacing: 6px;
+      color: $pink-color;
+      &-wrap {
+        transition: 0.3s all;
+        margin-left: 10px;
+        border: 1px solid $pink-color;
+        border-radius: 50%;
+        padding: 3px;
+      }
+      &-img {
+        transition: 0.3s all;
+        fill: $pink-color;
+      }
+      &:hover {
+        background: $pink-color;
+        color: $white-color;
+        border-bottom: 3px solid $pink-color;
+        .subscribe-form_btn {
+          &-wrap {
+            border: 1px solid $white-color;
+          }
+          &-img {
+            fill: $white-color;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .subscribe {
+    margin-top: 20px;
+    &-form {
+      flex-direction: column;
+      &_input {
+        width: 100%;
+        &::placeholder {
+          text-align: center;
+        }
+      }
+      &_btn {
+        color: $white-color;
+        margin: 20px auto;
+        width: 75%;
+        padding: 20px 0;
+        border: 3px solid $pink-color;
+        background-color: $pink-color;
+        &:hover {
+          color: $purple-color;
+          border: 3px solid $grey-color;
+          background-color: $grey-color;
+          .subscribe-form_btn {
+            &-wrap {
+              border: 1px solid $purple-color;
+            }
+            &-img {
+              fill: $purple-color;
+            }
+          }
+        }
+        &-wrap {
+          border: 1px solid $white-color;
+        }
+        &-img {
+          fill: $white-color;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .subscribe {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .subscribe {
+    margin-top: 20px;
+  }
+}

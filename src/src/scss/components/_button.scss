@@ -1,0 +1,23 @@
+.link-btn {
+  width: 197px;
+  height: 45px;
+  border-radius: 36px;
+  background-color: $primary-color;
+  padding: 14px 47px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  &:hover {
+    background-color: $btn-hover-color;
+    text-decoration: none;
+    color: $btn-hover-text-color;
+  }
+}
+.submit-btn {
+  transition: 0.3s all;
+  border: 1px solid $primary-color;
+  width: 220px;
+  color: $white-color;
+  &:hover {
+    border: 1px solid $btn-hover-color;
+  }
+}

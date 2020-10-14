@@ -1,0 +1,20 @@
+.contact-main {
+  padding-top: 105px;
+  padding-bottom: 114px;
+  background: 100% 100% no-repeat $header-bg-color;
+  background-image: url(/img/jpg/contact_bg_main.jpg);
+  background-size: cover;
+  &_header {
+    font-weight: 500;
+    line-height: 80px;
+    font-size: 54px;
+    color: $header-main-text;
+  }
+  &_subheader {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 37px;
+    letter-spacing: 4px;
+    color: $header-text-color;
+  }
+}

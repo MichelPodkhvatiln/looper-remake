@@ -1,0 +1,68 @@
+.header-contact {
+  padding-top: 57px;
+  padding-bottom: 32px;
+  a {
+    color: $darknes-purple-color;
+  }
+  .nav {
+    .active {
+      a {
+        &:after {
+          background-color: $darknes-purple-color;
+        }
+      }
+    }
+
+    &-list {
+      &_item {
+        a {
+          &:after {
+            background-color: $darknes-purple-color;
+          }
+          &:hover {
+            color: $header-main-text;
+            &:after {
+              background-color: $header-main-text;
+            }
+          }
+        }
+      }
+    }
+    &-phone {
+      &_item {
+        a {
+          color: $darknes-purple-color;
+        }
+        :hover {
+          color: $header-main-text;
+        }
+      }
+    }
+    &-menu {
+      &_button {
+        &-line {
+          background-color: $darknes-purple-color;
+          &:after {
+            background-color: $darknes-purple-color;
+          }
+          &:before {
+            background-color: $darknes-purple-color;
+          }
+          &-close {
+            &:after {
+              background-color: $darknes-purple-color;
+            }
+            &:before {
+              background-color: $darknes-purple-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .header-contact {
+    padding-bottom: 59px;
+  }
+}

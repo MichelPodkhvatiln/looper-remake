@@ -1,0 +1,43 @@
+body {
+  font-family: "M PLUS 1p", sans-serif;
+}
+h3 {
+  font-weight: 500;
+  font-size: 45px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-weight: 800;
+  font-size: 12.6px;
+  line-height: 26px;
+  letter-spacing: 6px;
+  &:after {
+    background-color: $header-main-text;
+    display: block;
+    content: "";
+    height: 1px;
+    width: 95%;
+    margin-top: 5px;
+  }
+}
+address {
+  margin-bottom: 0;
+}
+.container {
+  padding: 0;
+}
+
+@media (max-width: 575.98px) {
+  h3 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
