@@ -1,0 +1,28 @@
+@mixin link-with-active-line($color, $active-color, $width: 0%) {
+  a {
+    position: relative;
+    color: $color;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 1px;
+      width: $width;
+      left: 50%;
+      background-color: $active-color;
+      transition: width 0.3s ease-in-out;
+      transform: translateX(-50%);
+    }
+
+    &:hover {
+      &:after {
+        width: 70%;
+      }
+
+      color: $active-color;
+    }
+  }
+}

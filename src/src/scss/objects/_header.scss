@@ -1,4 +1,4 @@
-.row-header {
+.row--header {
   margin: 0 -46px 0 -15px;
 }
 .row-main {
@@ -12,11 +12,11 @@
   width: 100%;
   height: 828px;
   background: 100% 100% no-repeat $header-bg-color;
-  background-image: url(/img/jpg/main_bg.jpg);
+  background-image: url('/img/jpg/main_bg.jpg');
   background-size: cover;
   color: $header-text-color;
 
-  &-logo {
+  &--logo {
     height: 47px;
     font-weight: 900;
     font-size: 24px;

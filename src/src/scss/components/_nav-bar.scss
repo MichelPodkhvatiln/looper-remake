@@ -1,80 +1,37 @@
 .nav {
-  width: 79%;
-  padding-top: 9px;
-  font-size: 14.4px;
-  line-height: 30px;
-  letter-spacing: 2px;
+  padding-top: 10px;
+  width: 80%;
+  font-size: 0.9rem;
   font-weight: 800;
-  .active {
-    opacity: 1;
-    a {
-      position: relative;
-      &:after {
-        background-color: $header-text-color;
-        display: block;
-        content: "";
-        height: 1px;
-        width: 70%;
-        left: 50%;
-        position: absolute;
-        transform: translateX(-50%);
-        transition: 0.3s;
-      }
-      &:hover {
-        &:after {
-          transition: 0.3s;
-          background-color: $header-main-text;
-        }
-        text-decoration: none;
-        color: $header-main-text;
-      }
-    }
+  line-height: 2;
+  letter-spacing: 2px;
+
+  &--list {
+    margin: 0 9px;
   }
 
-  &-list {
+  &--list__item {
+    margin-right: 45px;
+    opacity: 0.8;
     list-style: none;
-    &_item {
-      opacity: 0.8;
-      margin: 0 9px;
+    @include link-with-active-line($header-text-color, $header-main-text);
 
-      a {
-        position: relative;
-        &:after {
-          background-color: $header-main-text;
-          display: block;
-          content: "";
-          height: 1px;
-          width: 0%;
-          left: 50%;
-          position: absolute;
-          transition: width 0.3s ease-in-out;
-          transform: translateX(-50%);
-        }
-        &:hover {
-          &:after {
-            width: 70%;
-          }
-          text-decoration: none;
-          color: $header-main-text;
-        }
-      }
-      &-home,
-      &-work,
-      &-services {
-        margin-right: 44px;
-      }
-      &-contact {
-        margin-left: 44px;
-      }
+    &-active {
+      opacity: 1;
+      @include link-with-active-line($header-main-text, $header-main-text, 70%);
     }
   }
+
+
   &-phone {
     &_img {
       margin-right: 10px;
     }
+
     &_item {
       padding-bottom: 20px;
-      :hover {
+
+      &:hover {
         text-decoration: none;
         color: $header-main-text;
       }
@@ -86,9 +43,11 @@
     padding-top: 6px;
     position: relative;
     width: 27px;
+
     &_button {
       cursor: pointer;
       padding-top: 27px;
+
       &-close {
         position: absolute;
         width: 27px;
@@ -96,12 +55,14 @@
         top: 170px;
         left: 200px;
       }
+
       &-line {
         position: absolute;
         width: 27px;
         height: 2px;
         background-color: $header-text-color;
         top: 14px;
+
         &:after {
           position: absolute;
           width: 27px;
@@ -110,6 +71,7 @@
           content: "";
           top: -7px;
         }
+
         &:before {
           position: absolute;
           margin-left: 9px;
@@ -119,11 +81,13 @@
           content: "";
           top: 7px;
         }
+
         &-close {
           width: 27px;
           height: 2px;
           z-index: 1100;
           background-color: transparent;
+
           &:after {
             position: absolute;
             width: 27px;
@@ -133,6 +97,7 @@
             top: 12px;
             transform: rotate(45deg);
           }
+
           &:before {
             position: absolute;
             width: 27px;
@@ -145,23 +110,28 @@
         }
       }
     }
+
     &_small-device {
       display: none;
+
       ul {
         list-style: none;
       }
     }
   }
 }
+
 @media (max-width: 575.97px) {
   .nav {
     position: relative;
     justify-content: flex-end !important;
+
     &-list {
       &_item {
         display: none;
       }
     }
+
     &-phone {
       position: absolute;
       width: 300px;
@@ -169,8 +139,10 @@
       left: -100px;
       z-index: 100;
     }
+
     &-menu {
       display: block;
+
       &_small-device {
         display: block !important;
         position: fixed;
@@ -184,9 +156,11 @@
         z-index: 1000;
         right: -2000px;
         top: -133px;
+
         li {
           font-size: 20px;
           margin: 20px auto;
+
           a {
             &:hover {
               color: $small-nav-menu-color;
@@ -194,6 +168,7 @@
           }
         }
       }
+
       &_active {
         .nav-menu {
           &_small-device {
@@ -205,68 +180,23 @@
     }
   }
 }
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   .nav {
     position: relative;
     justify-content: flex-end !important;
+
     &-list {
       &_item {
         display: none;
       }
     }
+
     &-phone {
       position: absolute;
       right: 50px;
     }
-    &-menu {
-      display: block;
-      &_small-device {
-        display: block !important;
-        position: fixed;
-        padding-top: 80px;
-        transition: 0.5s all;
-        width: 500px;
-        height: 880px;
-        background-color: $header-main-text;
-        padding-top: 200px;
-        padding-left: 50px;
-        z-index: 1000;
-        right: -2000px;
-        top: -100px;
-        li {
-          font-size: 20px;
-          margin: 20px auto;
-          a {
-            &:hover {
-              color: $small-nav-menu-color;
-            }
-          }
-        }
-      }
-      &_active {
-        .nav-menu {
-          &_small-device {
-            position: fixed;
-            right: -200px;
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .nav {
-    position: relative;
-    justify-content: flex-end !important;
-    &-list {
-      &_item {
-        display: none;
-      }
-    }
-    &-phone {
-      position: absolute;
-      right: 50px;
-    }
+
     &-menu {
       display: block;
 
@@ -283,9 +213,11 @@
         z-index: 1000;
         right: -2000px;
         top: -100px;
+
         li {
           font-size: 20px;
           margin: 20px auto;
+
           a {
             &:hover {
               color: $small-nav-menu-color;
@@ -293,6 +225,7 @@
           }
         }
       }
+
       &_active {
         .nav-menu {
           &_small-device {
@@ -304,6 +237,64 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav {
+    position: relative;
+    justify-content: flex-end !important;
+
+    &-list {
+      &_item {
+        display: none;
+      }
+    }
+
+    &-phone {
+      position: absolute;
+      right: 50px;
+    }
+
+    &-menu {
+      display: block;
+
+      &_small-device {
+        display: block !important;
+        position: fixed;
+        padding-top: 80px;
+        transition: 0.5s all;
+        width: 500px;
+        height: 880px;
+        background-color: $header-main-text;
+        padding-top: 200px;
+        padding-left: 50px;
+        z-index: 1000;
+        right: -2000px;
+        top: -100px;
+
+        li {
+          font-size: 20px;
+          margin: 20px auto;
+
+          a {
+            &:hover {
+              color: $small-nav-menu-color;
+            }
+          }
+        }
+      }
+
+      &_active {
+        .nav-menu {
+          &_small-device {
+            position: fixed;
+            right: -200px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .nav {
     width: 100% !important;
