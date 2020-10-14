@@ -1,3 +1,15 @@
+@mixin custom-link($color: $header-text-color, $active-color: $header-main-text) {
+  a {
+    color: $color;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $header-main-text;
+    }
+  }
+}
+
 @mixin link-with-active-line($color, $active-color, $width: 0%) {
   a {
     position: relative;

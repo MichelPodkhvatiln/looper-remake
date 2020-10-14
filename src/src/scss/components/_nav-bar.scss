@@ -7,7 +7,7 @@
   letter-spacing: 2px;
 
   &--list {
-    margin: 0 9px;
+    margin: 0 10px;
   }
 
   &--list__item {
@@ -22,20 +22,13 @@
     }
   }
 
+  &--phone__img {
+    margin-right: 10px;
+  }
 
-  &-phone {
-    &_img {
-      margin-right: 10px;
-    }
-
-    &_item {
-      padding-bottom: 20px;
-
-      &:hover {
-        text-decoration: none;
-        color: $header-main-text;
-      }
-    }
+  &--phone__link {
+    padding-bottom: 20px;
+    @include custom-link();
   }
 
   &-menu {
@@ -126,13 +119,12 @@
     position: relative;
     justify-content: flex-end !important;
 
-    &-list {
-      &_item {
+    &--list__item {
         display: none;
       }
-    }
 
-    &-phone {
+
+    &--phone {
       position: absolute;
       width: 300px;
       top: 70px;
@@ -149,7 +141,7 @@
         padding-top: 80px;
         transition: 0.5s all;
         width: 500px;
-        height: 880px;
+        height: 100vh;
         background-color: $light-pink-color;
         padding-top: 200px;
         padding-left: 50px;
@@ -206,7 +198,7 @@
         padding-top: 80px;
         transition: 0.5s all;
         width: 500px;
-        height: 880px;
+        height: 100vh;
         background-color: $header-main-text;
         padding-top: 200px;
         padding-left: 50px;
@@ -263,7 +255,7 @@
         padding-top: 80px;
         transition: 0.5s all;
         width: 500px;
-        height: 880px;
+        height: 100vh;
         background-color: $header-main-text;
         padding-top: 200px;
         padding-left: 50px;
